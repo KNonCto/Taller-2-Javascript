@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Calculator</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+
+    <link href="./css/calculator.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="container calculator mt-5">
+      <div class="row">
+        <div class="col results" id="result"></div>
+      </div>
+      <div class="row">
+        <div class="col current-function" id="current-function"></div>
+      </div>
+      <div class="row">
+        <div
+          class="col button function-button"
+          id="button-add"
+          onclick="operation(this)"
+        >
+          +
+        </div>
+        <div
+          class="col button function-button"
+          id="button-subtract"
+          onclick="operation(this)"
+        >
+          -
+        </div>
+        <div
+          class="col button function-button"
+          id="button-multiply"
+          onclick="operation(this)"
+        >
+          x
+        </div>
+        <div
+          class="col button function-button"
+          id="button-divide"
+          onclick="operation(this)"
+        >
+          /
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-9">
+          <div class="row">
+            <div
+              class="col button number-button"
+              id="button-7"
+              onclick="number(this)"
+            >
+              7
+            </div>
+            <div
+              class="col button number-button"
+              id="button-8"
+              onclick="number(this)"
+            >
+              8
+            </div>
+            <div
+              class="col button number-button"
+              id="button-9"
+              onclick="number(this)"
+            >
+              9
+            </div>
+          </div>
+          <div class="row">
+            <div
+              class="col button number-button"
+              id="button-4"
+              onclick="number(this)"
+            >
+              4
+            </div>
+            <div
+              class="col button number-button"
+              id="button-5"
+              onclick="number(this)"
+            >
+              5
+            </div>
+            <div
+              class="col button number-button"
+              id="button-6"
+              onclick="number(this)"
+            >
+              6
+            </div>
+          </div>
+          <div class="row">
+            <div
+              class="col button number-button"
+              id="button-1"
+              onclick="number(this)"
+            >
+              1
+            </div>
+            <div
+              class="col button number-button"
+              id="button-2"
+              onclick="number(this)"
+            >
+              2
+            </div>
+            <div
+              class="col button number-button"
+              id="button-3"
+              onclick="number(this)"
+            >
+              3
+            </div>
+          </div>
+          <div class="row">
+            <div
+              class="col button number-button border-down-left"
+              id="button-0"
+              onclick="number(this)"
+            >
+              0
+            </div>
+            <div
+              class="col button number-button"
+              id="button-dot"
+              onclick="number(this)"
+            >
+              .
+            </div>
+            <div
+              class="col button number-button"
+              id="button-c"
+              onclick="clean()"
+            >
+              C
+            </div>
+          </div>
+        </div>
+        <div class="col-3 equals-button border-down-right" id="button-equals">
+          =
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="js/index.js"></script>
+</html>
